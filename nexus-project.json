@@ -105,6 +105,20 @@
       "status": "done",
       "detail": "Arquivos preparados e comandos gerados.",
       "at": "2026-06-04T06:20:34.102Z"
+    },
+    {
+      "id": "c1e64bdc",
+      "label": "GitHub preparado",
+      "status": "done",
+      "detail": "Repositorio nexus-deploy-smoke-public-20260604-033222 enviado.",
+      "at": "2026-06-04T06:32:29.538Z"
+    },
+    {
+      "id": "225f3441",
+      "label": "Deploy preparado",
+      "status": "done",
+      "detail": "https://create-tiny-static-landing-page-called.onrender.com",
+      "at": "2026-06-04T06:32:31.805Z"
     }
   ],
   "validation": {
@@ -146,19 +160,19 @@
     "supabase/schema.sql",
     "tests/smoke.test.mjs"
   ],
-  "updatedAt": "2026-06-04T06:20:34.106Z",
+  "updatedAt": "2026-06-04T06:32:31.807Z",
   "github": {
     "prepared": true,
-    "pushed": false,
-    "repoName": "nexus-deploy-smoke-20260604-031943",
-    "repoUrl": "https://github.com/dlemes829-blip/nexus-deploy-smoke-20260604-031943.git",
-    "visibility": "private",
+    "pushed": true,
+    "repoName": "nexus-deploy-smoke-public-20260604-033222",
+    "repoUrl": "https://github.com/dlemes829-blip/nexus-deploy-smoke-public-20260604-033222.git",
+    "visibility": "public",
     "projectDir": "C:\\Users\\danie\\OneDrive\\nexus-v4-final\\nexus\\engines\\runtime\\projects\\proj_create-tiny-static-landing-page-called-nexus-dep_b43cd728",
     "commands": [
       "git init",
       "git add .",
       "git commit -m \"Initial Agent Nexus project\"",
-      "gh repo create nexus-deploy-smoke-20260604-031943 --private --source . --remote origin --push"
+      "gh repo create nexus-deploy-smoke-public-20260604-033222 --public --source . --remote origin --push"
     ],
     "logs": [
       {
@@ -195,7 +209,13 @@
         "command": "git commit -m Initial Agent Nexus project",
         "ok": true,
         "status": 0,
-        "output": "[master (root-commit) 22f0fad] Initial Agent Nexus project\n 18 files changed, 647 insertions(+)\n create mode 100644 .env.example\n create mode 100644 .gitignore\n create mode 100644 GITHUB_READY.md\n create mode 100644 README.md\n create mode 100644 docs/architecture.md\n create mode 100644 docs/improvements/2026-06-04t06-16-38-362z.md\n create mode 100644 index.html\n create mode 100644 nexus-project.json\n create mode 100644 package.json\n create mode 100644 public/index.html\n create mode 100644 src/App.jsx\n create mode 100644 src/data/agentImprovements.js\n create mode 100644 src/data/demoData.js\n create mode 100644 src/lib/supabaseClient.js\n create mode 100644 src/main.jsx\n create mode 100644 src/styles.css\n create mode 100644 supabase/schema.sql\n create mode 100644 tests/smoke.test.mjs"
+        "output": "[master 22715f1] Initial Agent Nexus project\n 2 files changed, 53 insertions(+), 16 deletions(-)"
+      },
+      {
+        "command": "git branch -M main",
+        "ok": true,
+        "status": 0,
+        "output": ""
       },
       {
         "command": "gh --version",
@@ -207,32 +227,43 @@
         "command": "GitHub API create repository",
         "ok": true,
         "status": 201,
-        "output": "Repository created: https://github.com/dlemes829-blip/nexus-deploy-smoke-20260604-031943"
+        "output": "Repository created: https://github.com/dlemes829-blip/nexus-deploy-smoke-public-20260604-033222"
       },
       {
         "command": "git remote",
         "ok": true,
         "status": 0,
-        "output": ""
+        "output": "origin"
       },
       {
-        "command": "git remote add origin https://github.com/dlemes829-blip/nexus-deploy-smoke-20260604-031943.git",
+        "command": "git remote set-url origin https://github.com/dlemes829-blip/nexus-deploy-smoke-public-20260604-033222.git",
         "ok": true,
         "status": 0,
         "output": ""
       },
       {
-        "command": "git push -u origin HEAD",
-        "ok": false,
-        "status": null,
-        "output": ""
+        "command": "git push -u origin HEAD:main",
+        "ok": true,
+        "status": 0,
+        "output": "branch 'main' set up to track 'https://x-access-token:[redacted]@github.com/dlemes829-blip/nexus-deploy-smoke-public-20260604-033222.git/main'.\nTo https://github.com/dlemes829-blip/nexus-deploy-smoke-public-20260604-033222.git\n * [new branch]      HEAD -> main"
       },
       {
         "command": "git remote get-url origin",
         "ok": true,
         "status": 0,
-        "output": "https://github.com/dlemes829-blip/nexus-deploy-smoke-20260604-031943.git"
+        "output": "https://github.com/dlemes829-blip/nexus-deploy-smoke-public-20260604-033222.git"
       }
     ]
-  }
+  },
+  "liveUrl": "https://create-tiny-static-landing-page-called.onrender.com",
+  "deployments": [
+    {
+      "id": "srv-d8ghnv6k1jcs73d0rj80",
+      "provider": "render",
+      "publicUrl": "https://create-tiny-static-landing-page-called.onrender.com",
+      "dashboardUrl": "https://dashboard.render.com/static/srv-d8ghnv6k1jcs73d0rj80",
+      "status": "created",
+      "createdAt": "2026-06-04T06:32:31.805Z"
+    }
+  ]
 }

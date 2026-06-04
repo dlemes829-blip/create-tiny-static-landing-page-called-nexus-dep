@@ -20,5 +20,5 @@ Projeto preparado pelo Agent Nexus para subir ao GitHub.
 git init
 git add .
 git commit -m "Initial Agent Nexus project"
-gh repo create nexus-deploy-smoke-public-20260604-033222 --public --source . --remote origin --push
+gh repo create create-tiny-static-landing-page-called-nexus-dep --public --source . --remote origin --push
 ```

@@ -119,6 +119,13 @@
       "status": "done",
       "detail": "https://create-tiny-static-landing-page-called.onrender.com",
       "at": "2026-06-04T06:32:31.805Z"
+    },
+    {
+      "id": "0398f857",
+      "label": "GitHub preparado",
+      "status": "done",
+      "detail": "Repositorio create-tiny-static-landing-page-called-nexus-dep enviado.",
+      "at": "2026-06-04T14:47:18.108Z"
     }
   ],
   "validation": {
@@ -148,6 +155,7 @@
     "GITHUB_READY.md",
     "index.html",
     "nexus-project.json",
+    "package-lock.json",
     "package.json",
     "public/index.html",
     "README.md",
@@ -160,19 +168,19 @@
     "supabase/schema.sql",
     "tests/smoke.test.mjs"
   ],
-  "updatedAt": "2026-06-04T06:32:31.807Z",
+  "updatedAt": "2026-06-04T14:47:18.112Z",
   "github": {
     "prepared": true,
     "pushed": true,
-    "repoName": "nexus-deploy-smoke-public-20260604-033222",
-    "repoUrl": "https://github.com/dlemes829-blip/nexus-deploy-smoke-public-20260604-033222.git",
+    "repoName": "create-tiny-static-landing-page-called-nexus-dep",
+    "repoUrl": "https://github.com/dlemes829-blip/create-tiny-static-landing-page-called-nexus-dep.git",
     "visibility": "public",
     "projectDir": "C:\\Users\\danie\\OneDrive\\nexus-v4-final\\nexus\\engines\\runtime\\projects\\proj_create-tiny-static-landing-page-called-nexus-dep_b43cd728",
     "commands": [
       "git init",
       "git add .",
       "git commit -m \"Initial Agent Nexus project\"",
-      "gh repo create nexus-deploy-smoke-public-20260604-033222 --public --source . --remote origin --push"
+      "gh repo create create-tiny-static-landing-page-called-nexus-dep --public --source . --remote origin --push"
     ],
     "logs": [
       {
@@ -203,13 +211,13 @@
         "command": "git add .",
         "ok": true,
         "status": 0,
-        "output": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'GITHUB_READY.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'nexus-project.json', LF will be replaced by CRLF the next time Git touches it"
+        "output": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'GITHUB_READY.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'nexus-project.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it"
       },
       {
         "command": "git commit -m Initial Agent Nexus project",
         "ok": true,
         "status": 0,
-        "output": "[master 22715f1] Initial Agent Nexus project\n 2 files changed, 53 insertions(+), 16 deletions(-)"
+        "output": "[main 3481c88] Initial Agent Nexus project\n 3 files changed, 1033 insertions(+), 17 deletions(-)\n create mode 100644 package-lock.json"
       },
       {
         "command": "git branch -M main",
@@ -227,7 +235,7 @@
         "command": "GitHub API create repository",
         "ok": true,
         "status": 201,
-        "output": "Repository created: https://github.com/dlemes829-blip/nexus-deploy-smoke-public-20260604-033222"
+        "output": "Repository created: https://github.com/dlemes829-blip/create-tiny-static-landing-page-called-nexus-dep"
       },
       {
         "command": "git remote",
@@ -236,7 +244,7 @@
         "output": "origin"
       },
       {
-        "command": "git remote set-url origin https://github.com/dlemes829-blip/nexus-deploy-smoke-public-20260604-033222.git",
+        "command": "git remote set-url origin https://github.com/dlemes829-blip/create-tiny-static-landing-page-called-nexus-dep.git",
         "ok": true,
         "status": 0,
         "output": ""
@@ -245,13 +253,13 @@
         "command": "git push -u origin HEAD:main",
         "ok": true,
         "status": 0,
-        "output": "branch 'main' set up to track 'https://x-access-token:[redacted]@github.com/dlemes829-blip/nexus-deploy-smoke-public-20260604-033222.git/main'.\nTo https://github.com/dlemes829-blip/nexus-deploy-smoke-public-20260604-033222.git\n * [new branch]      HEAD -> main"
+        "output": "branch 'main' set up to track 'https://x-access-token:[redacted]@github.com/dlemes829-blip/create-tiny-static-landing-page-called-nexus-dep.git/main'.\nTo https://github.com/dlemes829-blip/create-tiny-static-landing-page-called-nexus-dep.git\n * [new branch]      HEAD -> main"
       },
       {
         "command": "git remote get-url origin",
         "ok": true,
         "status": 0,
-        "output": "https://github.com/dlemes829-blip/nexus-deploy-smoke-public-20260604-033222.git"
+        "output": "https://github.com/dlemes829-blip/create-tiny-static-landing-page-called-nexus-dep.git"
       }
     ]
   },
